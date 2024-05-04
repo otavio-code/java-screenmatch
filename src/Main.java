@@ -19,5 +19,8 @@ public class Main {
                 """ + anoDeLancamento;
         System.out.println(sinopse);
 
+        //casting explicíto na variável classficacao, transformando o valor que está recebendo em um inteiro
+        int classificacao = (int) (media / 2);
+        System.out.println(classificacao);
     }
 }
