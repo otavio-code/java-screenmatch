@@ -2,15 +2,27 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Informe a temperatura em graus Celsius para converter em Fahrenheit: ");
-        double temperatura_fahrenheit;
-        double temperatura_celsius;
-        Scanner ler = new Scanner(System.in);
-        temperatura_celsius = ler.nextDouble();
-        temperatura_fahrenheit = (temperatura_celsius * 1.8) + 32;
+        //Crie um programa que realize a média de duas notas decimais e exiba o resultado.
+        double nota_1;
+        System.out.println("Informe a nota 1:");
+        Scanner sc1 = new Scanner(System.in);
+        nota_1 = sc1.nextDouble();
 
-        String mensagem = String.format("A temperatura em graus celsius %f é equivalente a temperatura %f em farenheit: ", temperatura_celsius, temperatura_fahrenheit);
+        double nota_2;
+        System.out.println("Informe a nota 2:");
+        Scanner sc2 = new Scanner(System.in);
+        nota_2 = sc2.nextDouble();
+
+        double media = (nota_1 + nota_2) / 2;
+        String mensagem = String.format("A média das notas %f e %f. Tem como resultado %f", nota_1, nota_2, media);
         System.out.println(mensagem);
 
+        //Declare uma variável do tipo double e uma variável do tipo int. Faça o casting da variável double para int e imprima o resultado.
+
+        double var1;
+        int var2;
+        var1 = 3.434;
+        var2 = (int) (var1);
+        System.out.println("Imprimindo a variavel " + var2);
     }
 }
