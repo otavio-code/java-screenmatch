@@ -35,6 +35,15 @@ public class Main {
         mensagem = String.format("O valor do produto é R$ %f", resultado);
         System.out.println(mensagem);
 
+        /*Declare uma variável do tipo char (letra) e uma variável do tipo String (palavra).
+         Atribua valores a essas variáveis e concatene-as em uma mensagem.
+         */
+        char letra = 'O';
+        String palavra = "tavio";
+
+        String mensagem_char_string = "A letra é " + letra + " e a palavra é " + palavra;
+        System.out.println(mensagem_char_string);
+
         /*Declare uma variável do tipo double valorEmDolares. Atribua um valor
          em dólares a essa variável. Considere que o valor de 1 dólar é equivalente
           a 4.94 reais. Realize a conversão do valor em dólares para reais
